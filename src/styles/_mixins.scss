@@ -1,0 +1,11 @@
+@mixin responsive($size) {
+  @if $size == "md" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin transition-fast {
+  transition: 0.3s ease;
+}
