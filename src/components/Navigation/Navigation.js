@@ -24,7 +24,7 @@ const Navigation = () => {
       setScrollPos((prev) => {
         if (currentPos > 100 && currentPos > prev) {
           setShowNav(false);
-        } else if (currentPos <= 100 ||currentPos <= prev - 300 ) {
+        } else if (currentPos <= 100 ||currentPos <= prev - 50 ) {
           setShowNav(true);
         }
         return currentPos;
@@ -40,7 +40,7 @@ const Navigation = () => {
   return (
     <nav className={`nav ${showNav ? "active" : "hidden"}`}>
       <div className="nav__content">
-        <h2 className="nav__content__logo">Nicole G</h2>
+        <h2 className="nav__content__logo">Nicole Gao</h2>
         <div className={`nav__content__menu ${isOpen ? "isOpen" : ""}`}>
           <ul>
             <li>
