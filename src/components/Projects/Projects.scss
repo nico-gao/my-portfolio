@@ -1,8 +1,22 @@
+@import "../../styles//_variables.scss";
+
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
 
   background-image: linear-gradient(150deg, white, pink);
+
+  &__header {
+    margin-top: 50px;
+    color: $red;
+    text-shadow: 3px 3px $text-shadow;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }

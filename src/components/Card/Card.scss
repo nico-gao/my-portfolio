@@ -5,7 +5,7 @@ $margin: 20px;
 $offset: 125px;
 
 .card {
-  width: 400px;
+  width: 450px;
   max-height: 800px;
   margin: calc(50px + $offset) 40px 50px 40px;
   padding: 30px;
@@ -45,11 +45,15 @@ $offset: 125px;
     overflow: hidden;
     position: absolute;
     top: 0;
+
+    box-shadow: 0 5px 10px rgba($red, 0.2);
+
     transform: translateY(-($offset - 10px));
     @include transition-fast;
 
     @include responsive("sm") {
       width: 80%;
+      height: 230px;
     }
 
     img {
@@ -74,7 +78,7 @@ $offset: 125px;
     font-size: 16px;
   }
 
-  &__skills {
+  &__tools {
     margin: $margin 0;
     ul {
       list-style: none;
@@ -83,7 +87,10 @@ $offset: 125px;
 
       li {
         flex: 1;
-        font-size: 18px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: rgba($black, 0.8);
       }
 
