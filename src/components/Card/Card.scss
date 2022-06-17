@@ -21,6 +21,14 @@ $offset: 125px;
 
   @include transition-fast;
 
+  @include responsive("sm") {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 30px rgba($red, 0.4);
@@ -39,6 +47,10 @@ $offset: 125px;
     top: 0;
     transform: translateY(-($offset - 10px));
     @include transition-fast;
+
+    @include responsive("sm") {
+      width: 80%;
+    }
 
     img {
       width: 100%;
