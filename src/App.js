@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="app">
       <Navigation />
-      <div>
+      <div style={{marginTop: "80px"}}>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           ultrices quis turpis vel accumsan. Nam convallis ligula magna, id
