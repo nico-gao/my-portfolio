@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 import useThrottle from "../../hooks/useThrottle";
+import useDisableScroll from "../../hooks/useDisableScroll";
 
 import "./Navigation.scss";
 
@@ -11,6 +12,7 @@ const Navigation = () => {
   const [showNav, setShowNav] = useState(true);
   const [, setScrollPos] = useState(window.scrollY);
   const [throttle] = useThrottle();
+  useDisableScroll(isOpen);
 
   const menuToggleHandler = () => {
     setIsOpen((prev) => !prev);
