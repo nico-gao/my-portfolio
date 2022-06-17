@@ -22,9 +22,9 @@ const Navigation = () => {
     const scrollHandler = () => {
       const currentPos = window.scrollY;
       setScrollPos((prev) => {
-        if (currentPos > prev) {
+        if (currentPos > 100 && currentPos > prev) {
           setShowNav(false);
-        } else if (currentPos <= prev - 300 || currentPos === 0) {
+        } else if (currentPos <= 100 ||currentPos <= prev - 300 ) {
           setShowNav(true);
         }
         return currentPos;
