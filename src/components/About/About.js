@@ -10,7 +10,7 @@ const About = () => {
         <div className="about__left">
           <p>Hi, I'm Nicole Gao, </p>
           <p>
-            a frontend developer who enjoy writing code and turning designs into
+            a frontend developer who enjoys writing code and turning designs into
             web applications that users can interact with. I primarily work with
             the React tech stack and some backend with Node.js and Express.js
           </p>
