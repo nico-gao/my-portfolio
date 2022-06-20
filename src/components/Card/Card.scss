@@ -17,7 +17,7 @@ $offset: 125px;
   position: relative;
   background-color: $white;
   border-radius: 15px;
-  box-shadow: 0 5px 30px rgba($red, 0.2);
+  box-shadow: 0 5px 30px rgba($shadow, 0.2);
 
   @include transition-fast;
 
@@ -31,7 +31,7 @@ $offset: 125px;
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 30px rgba($red, 0.4);
+    box-shadow: 0 5px 30px rgba($shadow, 0.4);
 
     .card__img {
       transform: translateY(-$offset);
@@ -46,7 +46,7 @@ $offset: 125px;
     position: absolute;
     top: 0;
 
-    box-shadow: 0 5px 10px rgba($red, 0.2);
+    box-shadow: 0 5px 10px rgba($shadow, 0.2);
 
     transform: translateY(-($offset - 10px));
     @include transition-fast;

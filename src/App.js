@@ -1,4 +1,6 @@
 import React from "react";
+import About from "./components/About/About";
+import BackgroundWrapper from "./components/BackgroundWrapper/BackgroundWrapper";
 import Header from "./components/Header/Header";
 
 import Navigation from "./components/Navigation/Navigation";
@@ -9,8 +11,10 @@ const App = () => {
     <div className="app">
       <Navigation />
       <Header />
-      <Projects />
-      
+      <BackgroundWrapper>
+        <About />
+        <Projects />
+      </BackgroundWrapper>
     </div>
   );
 };

@@ -8,7 +8,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <div className="projects">
-      <h1 className="projects__header">My Projects</h1>
+      <h1 className="projects__heading heading">My Projects</h1>
       <div className="projects__wrapper">
         {projects.map((project) => (
           <Card key={project.id} project={project} />

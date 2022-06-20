@@ -1,17 +1,9 @@
-@import "../../styles//_variables.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .projects {
   display: flex;
   flex-direction: column;
-  text-align: center;
-
-  background-image: linear-gradient(150deg, white, pink);
-
-  &__header {
-    margin-top: 50px;
-    color: $red;
-    text-shadow: 3px 3px $text-shadow;
-  }
 
   &__wrapper {
     display: flex;
