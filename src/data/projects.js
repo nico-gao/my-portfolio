@@ -34,13 +34,13 @@ const hexspace = {
 };
 
 const gericht = {
-  id: "3",
+  id: "4",
   title: "Gericht",
   text:
     "A responsive restaurant landing page",
   tag: ["Frontend"],
   img: images.gericht,
-  tools: ["React", "Express", "Axios"],
+  tools: ["React"],
   link: "https://nico-gao.github.io/restaurant-practice/",
 };
 

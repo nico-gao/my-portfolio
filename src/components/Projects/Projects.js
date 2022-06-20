@@ -7,7 +7,7 @@ import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h1 className="projects__heading heading">My Projects</h1>
       <div className="projects__wrapper">
         {projects.map((project) => (

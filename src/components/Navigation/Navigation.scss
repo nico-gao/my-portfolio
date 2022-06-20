@@ -70,7 +70,7 @@
           &:not(:last-child) {
             margin-bottom: 2.5rem;
           }
-          a {
+          button {
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -83,6 +83,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
 
             @include transition-fast;
 

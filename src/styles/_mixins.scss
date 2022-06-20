@@ -10,6 +10,12 @@
       @content;
     }
   }
+
+  @if $size == "lg" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
 }
 
 @mixin transition-fast {

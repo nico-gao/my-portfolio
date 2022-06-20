@@ -4,7 +4,6 @@ import React from "react";
 import "./Card.scss";
 
 const Card = ({project}) => {
-  console.log(project);
   const { img, title, text, tools, link } = project;
   return (
     <div className="card">

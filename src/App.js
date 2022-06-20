@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./components/About/About";
 import BackgroundWrapper from "./components/BackgroundWrapper/BackgroundWrapper";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 import Navigation from "./components/Navigation/Navigation";
@@ -14,6 +15,7 @@ const App = () => {
       <BackgroundWrapper>
         <About />
         <Projects />
+        <Footer />
       </BackgroundWrapper>
     </div>
   );

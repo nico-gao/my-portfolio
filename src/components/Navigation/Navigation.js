@@ -24,7 +24,7 @@ const Navigation = () => {
       setScrollPos((prev) => {
         if (currentPos > 100 && currentPos > prev) {
           setShowNav(false);
-        } else if (currentPos <= 100 ||currentPos <= prev - 50 ) {
+        } else if (currentPos <= 100 || currentPos <= prev - 50) {
           setShowNav(true);
         }
         return currentPos;
@@ -37,6 +37,13 @@ const Navigation = () => {
     };
   }, [throttle, setScrollPos]);
 
+  const onClickHandler = (tag) => {
+    window.location = `#${tag}`;
+    setIsOpen(false);
+    setShowNav(false);
+    setScrollPos(window.scrollY);
+  };
+
   return (
     <nav className={`nav ${showNav ? "active" : "hidden"}`}>
       <div className="nav__content">
@@ -44,13 +51,15 @@ const Navigation = () => {
         <div className={`nav__content__menu ${isOpen ? "isOpen" : ""}`}>
           <ul>
             <li>
-              <a href="#about">About</a>
+              <button onClick={() => onClickHandler("header")}>Home</button>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <button onClick={() => onClickHandler("about")}>About</button>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <button onClick={() => onClickHandler("projects")}>
+                Projects
+              </button>
             </li>
           </ul>
         </div>

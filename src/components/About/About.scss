@@ -3,31 +3,45 @@
 
 .about {
   flex-direction: column;
-  
+  min-height: 400px;
+
   &__content {
     @include flex-center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 
     margin: $margin-sm;
-    border: 1px solid black;
 
-
-    @include responsive("md") {
+    @include responsive("lg") {
       margin: $margin-md;
       flex-direction: row;
+      gap: 0;
     }
   }
 
   &__left {
     flex: 1;
-    @include responsive("md") {
+    position: relative;
+    overflow: visible;
+    max-width: 600px;
+    margin-bottom: 30px;
+
+    @include responsive("lg") {
       margin-right: 50px;
+      margin-bottom: 0;
     }
   }
 
   &__right {
     flex: 1;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
